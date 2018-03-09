@@ -39,7 +39,7 @@ class RecipeInput extends Component {
   }
 
   handleSubmit(e) {
-    e.preventdefault();
+    e.preventDefault();
     this.props.onSave({...this.state});
     this.setState({
       title: '',
@@ -141,4 +141,4 @@ class RecipeInput extends Component {
 }
 
 
-export default RecipeInput
+export default RecipeInput;
